@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SejourLinguistique> <!-- ici l'entete de base pour un ensembde de sejour a l'etranger linguistique, il y a 3 type de sejour-->
+    <Colonies><!-- premier type de sejour, les colonnies de vacances, balise qui represente une liste de differente colonie-->
+        <Colonie Reference="1" ><!-- une colonie parmis d'autre, avec une reference unique (id)-->
+            <nom>colonie1</nom>
+            <destination>
+                <Pays>angleterre</Pays>
+                <Ville>Londre</Ville>
+                <Residence>Bermonds Locke</Residence>
+                <dure> 3 mois</dure>
+            </destination>
+            <langue> Anglais </langue>
+            <activite>
+                <sportive>
+                    <sport> foot </sport>
+                    <lieux> south-london </lieux>
+                    <date> 21/06/2023 </date>
+                </sportive>
+                <culturel>
+                    <lieux> British Museum</lieux>
+                    <date> 26/06/2023 </date>
+                </culturel>
+            </activite>
+            <public>
+                <Adulte>
+                    <Animateurs>
+                        <Animateur idAnim = "1">
+                            <age> 31 </age>
+                            <nom> hakimi </nom>
+                            <prenom> achraf </prenom>
+                        </Animateur>
+                    </Animateurs>
+                    <intervenants>
+                        <intervenant idInt = "1">
+                            <occupation> guide touristique </occupation>
+                            <age> 22 </age>
+                            <nom> WU </nom>
+                            <prenom> yi </prenom>
+                        </intervenant>
+                    </intervenants>
+                </Adulte>
+                <Jeunesse>
+                    <Jeune idJeune="1">
+                        <age> 9 </age>
+                        <nom> bonnet </nom>
+                        <prenom> kilian </prenom>
+                    </Jeune>
+                </Jeunesse>
+            </public>
+        </Colonie>
+    </Colonies>
+    <GroupesScolaires><!-- second type de sejour, les Groupes scolaire avec une liste de de groupes differents  -->
+        <GroupeSco Reference = "2"><!-- une famille faisant parti du systeme-->
+            <nom>groupe1</nom>
+            <destination>
+                <Pays>angleterre</Pays>
+                <Ville>Londre</Ville>
+                <Residence>Bermonds Locke</Residence>
+                <dure> 3 mois</dure>
+            </destination>
+            <langue> Anglais </langue>
+            <QuizLangue>
+                <dateQwiz> 21/06/2023 </dateQwiz>
+                <nombreQuestion> 10 </nombreQuestion>
+                <detail> questionnaire sur les animaux de la ferme en anglais </detail>
+            </QuizLangue>
+            <public>
+                <Adulte>
+                    <Professeurs>
+                        <Professeur idProf = "1">
+                            <age> 51 </age>
+                            <nom> lemor </nom>
+                            <prenom> joel </prenom>
+                            <langue> anglais </langue>
+                        </Professeur>
+                        <Professeur idProf = "2">
+                            <age> 24 </age>
+                            <nom> gonzales </nom>
+                            <prenom> miguel </prenom>
+                            <langue> espagnol </langue>
+                        </Professeur>
+                    </Professeurs>
+                    <ParentsAccompagnateur>
+                        <Parent idParent = "1">
+                            <enfant> kilian </enfant>
+                            <nom> chan </nom>
+                            <prenom> jacky </prenom>
+                        </Parent>
+                    </ParentsAccompagnateur>
+                </Adulte>
+                <Enfants>
+                    <Enfant idJeune="1">
+                        <age> 9 </age>
+                        <nom> chan </nom>
+                        <prenom> kilian </prenom>
+                    </Enfant>
+                </Enfants>
+            </public>
+        </GroupeSco>
+    </GroupesScolaires>
+    <Acceuils><!-- troisieme type de sejour, les familles d'acceuil avce une liste de differente famille-->
+        <FamilleAc Reference="3"><!-- une famille faisant partie du systeme-->
+            <nom>famille1</nom>
+            <destination>
+                <Pays>angleterre</Pays>
+                <Ville>Londre</Ville>
+                <Residence>Bermonds Locke</Residence>
+                <dure> 3 mois</dure>
+            </destination>
+            <langue> Anglais </langue>
+            <motivation> jeanne souhaite apprendre l'anglais perdant sont semestre a l'etranger </motivation>
+            <public>
+                <Famille><!-- pour les parents, il peut y avoir 1 ou deux parent, voir deux parent avec le meme role
+                                    ou voir meme un role de type tuteur, concernant les enfants, la famille peut ou non en avoir-->
+                    <Parents>
+                        <Parent role="pere">
+                            <age> 51 </age>
+                            <nom> vioreu </nom>
+                            <prenom> clement </prenom>
+                        </Parent>
+                        <Parent role="mere">
+                            <age> 43 </age>
+                            <nom> vioreu </nom>
+                            <prenom> margaux </prenom>
+                        </Parent>
+                    </Parents>
+                    <Enfans>
+                        <age> 2 </age>
+                        <nom> vioreu </nom>
+                        <prenom> yassine </prenom>
+                    </Enfans>
+                </Famille>
+                <Jeune> <!-- il y a un jeune par famille d'acceuil -->
+                    <nom> hatier </nom>
+                    <prenom> louis </prenom>
+                    <age> 14 </age>
+                </Jeune>
+            </public>
+        </FamilleAc>
+    </Acceuils>
+</SejourLinguistique>
