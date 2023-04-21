@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SejourLinguistique> <!-- ici l'entete de base pour un ensembde de sejour a l'etranger linguistique, il y a 3 type de sejour-->
+<SejourLinguistique xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schemaSejour.xsd"> <!-- ici l'entete de base pour un ensembde de sejour a l'etranger linguistique, il y a 3 type de sejour-->
     <Colonies><!-- premier type de sejour, les colonnies de vacances, balise qui represente une liste de differente colonie-->
         <Colonie Reference="1" ><!-- une colonie parmis d'autre, avec une reference unique (id)-->
             <nom>colonie1</nom>

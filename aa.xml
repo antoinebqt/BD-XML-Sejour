@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SejourLinguistique>
+    <Colonies>
+        <Colonie Reference="1" >
+            <nom></nom>
+            <destination>
+                <Pays></Pays>
+                <Ville></Ville>
+                <Residence></Residence>
+                <dure></dure>
+            </destination>
+            <langue></langue>
+            <activite>
+                <sportive>
+                    <sport></sport>
+                    <lieux></lieux>
+                    <date></date>
+                </sportive>
+                <culturel>
+                    <lieux></lieux>
+                    <date></date>
+                </culturel>
+            </activite>
+            <public>
+                <Adulte>
+                    <Animateurs>
+                        <Animateur idAnim = "1">
+                            <age></age>
+                            <nom></nom>
+                            <prenom></prenom>
+                        </Animateur>
+                    </Animateurs>
+                    <intervenants>
+                        <intervenant idInt = "1">
+                            <occupation></occupation>
+                            <age></age>
+                            <nom></nom>
+                            <prenom></prenom>
+                        </intervenant>
+                    </intervenants>
+                </Adulte>
+                <Jeunesse>
+                    <Jeune idJeune="1">
+                        <age></age>
+                        <nom></nom>
+                        <prenom></prenom>
+                    </Jeune>
+                </Jeunesse>
+            </public>
+        </Colonie>
+    </Colonies>
+    <GroupesScolaires><!-- second type de sejour, les Groupes scolaire avec une liste de de groupes differents  -->
+        <GroupeSco Reference = "2"><!-- une famille faisant parti du systeme-->
+            <nom></nom>
+            <destination>
+                <Pays></Pays>
+                <Ville></Ville>
+                <Residence></Residence>
+                <dure></dure>
+            </destination>
+            <langue></langue>
+            <QuizLangue>
+                <dateQwiz></dateQwiz>
+                <nombreQuestion></nombreQuestion>
+                <detail></detail>
+            </QuizLangue>
+            <public>
+                <Adulte>
+                    <Professeurs>
+                        <Professeur idProf = "1">
+                            <age></age>
+                            <nom></nom>
+                            <prenom> </prenom>
+                            <langue> </langue>
+                        </Professeur>
+                        <Professeur idProf = "2">
+                            <age>  </age>
+                            <nom>  </nom>
+                            <prenom>  </prenom>
+                            <langue>  </langue>
+                        </Professeur>
+                    </Professeurs>
+                    <ParentsAccompagnateur>
+                        <Parent idParent = "1">
+                            <enfant> </enfant>
+                            <nom>  </nom>
+                            <prenom>  </prenom>
+                        </Parent>
+                    </ParentsAccompagnateur>
+                </Adulte>
+                <Enfants>
+                    <Enfant idJeune="1">
+                        <age>  </age>
+                        <nom>  </nom>
+                        <prenom>  </prenom>
+                    </Enfant>
+                </Enfants>
+            </public>
+        </GroupeSco>
+    </GroupesScolaires>
+    <Acceuils>
+        <FamilleAc Reference="3">
+            <nom></nom>
+            <destination>
+                <Pays></Pays>
+                <Ville></Ville>
+                <Residence> </Residence>
+                <dure>  </dure>
+            </destination>
+            <langue>  </langue>
+            <motivation>  </motivation>
+            <public>
+                <Famille>
+                    <Parents>
+                        <Parent role="pere">
+                            <age>  </age>
+                            <nom>  </nom>
+                            <prenom>  </prenom>
+                        </Parent>
+                        <Parent role="mere">
+                            <age>  </age>
+                            <nom>  </nom>
+                            <prenom>  </prenom>
+                        </Parent>
+                    </Parents>
+                    <Enfans>
+                        <age>  </age>
+                        <nom>  </nom>
+                        <prenom>  </prenom>
+                    </Enfans>
+                </Famille>
+                <Jeune>
+                    <nom>  </nom>
+                    <prenom>  </prenom>
+                    <age>  </age>
+                </Jeune>
+            </public>
+        </FamilleAc>
+    </Acceuils>
+</SejourLinguistique>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="SejourLinguistique">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Colonies">
+                    <xs:complexType>
+                        <xs:choice minOccurs="0" maxOccurs="unbounded">
+                            <xs:sequence>
+                                <xs:element name="Colonie">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element type="xs:string" name="nom"/>
+                                            <xs:element name="destination">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element type="xs:string" name="Pays"/>
+                                                        <xs:element type="xs:string" name="Ville"/>
+                                                        <xs:element type="xs:string" name="Residence"/>
+                                                        <xs:element type="xs:string" name="dure"/>
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                            <xs:element type="xs:string" name="langue"/>
+                                            <xs:element name="activite">
+                                                <xs:complexType>
+                                                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                        <xs:sequence>
+                                                            <xs:element name="sportive">
+                                                                <xs:complexType>
+                                                                    <xs:sequence>
+                                                                        <xs:element type="xs:string" name="sport"/>
+                                                                        <xs:element type="xs:string" name="lieux"/>
+                                                                        <xs:element type="xs:string" name="date"/>
+                                                                    </xs:sequence>
+                                                                </xs:complexType>
+                                                            </xs:element>
+                                                            <xs:element name="culturel">
+                                                                <xs:complexType>
+                                                                    <xs:sequence>
+                                                                        <xs:element type="xs:string" name="lieux"/>
+                                                                        <xs:element type="xs:string" name="date"/>
+                                                                    </xs:sequence>
+                                                                </xs:complexType>
+                                                            </xs:element>
+                                                        </xs:sequence>
+                                                    </xs:choice>
+                                                </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="public">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element name="Adulte">
+                                                            <xs:complexType>
+                                                                <xs:sequence>
+                                                                    <xs:element name="Animateurs">
+                                                                        <xs:complexType>
+                                                                            <xs:choice minOccurs="1" maxOccurs="unbounded">
+                                                                                <xs:sequence>
+                                                                                    <xs:element name="Animateur">
+                                                                                        <xs:complexType>
+                                                                                            <xs:sequence>
+                                                                                                <xs:element type="xs:string" name="age"/>
+                                                                                                <xs:element type="xs:string" name="nom"/>
+                                                                                                <xs:element type="xs:string" name="prenom"/>
+                                                                                            </xs:sequence>
+                                                                                            <xs:attribute type="xs:byte" name="idAnim"/>
+                                                                                        </xs:complexType>
+                                                                                    </xs:element>
+                                                                                </xs:sequence>
+                                                                            </xs:choice>
+                                                                        </xs:complexType>
+                                                                    </xs:element>
+                                                                    <xs:element name="intervenants">
+                                                                        <xs:complexType>
+                                                                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                                                <xs:sequence>
+                                                                                    <xs:element name="intervenant">
+                                                                                        <xs:complexType>
+                                                                                            <xs:sequence>
+                                                                                                <xs:element type="xs:string" name="occupation"/>
+                                                                                                <xs:element type="xs:string" name="age"/>
+                                                                                                <xs:element type="xs:string" name="nom"/>
+                                                                                                <xs:element type="xs:string" name="prenom"/>
+                                                                                            </xs:sequence>
+                                                                                            <xs:attribute type="xs:byte" name="idInt"/>
+                                                                                        </xs:complexType>
+                                                                                    </xs:element>
+                                                                                </xs:sequence>
+                                                                            </xs:choice>
+                                                                        </xs:complexType>
+                                                                    </xs:element>
+                                                                </xs:sequence>
+                                                            </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="Jeunesse">
+                                                            <xs:complexType>
+                                                                <xs:choice minOccurs="1" maxOccurs="unbounded">
+                                                                    <xs:sequence>
+                                                                        <xs:element name="Jeune">
+                                                                            <xs:complexType>
+                                                                                <xs:sequence>
+                                                                                    <xs:element type="xs:string" name="age"/>
+                                                                                    <xs:element type="xs:string" name="nom"/>
+                                                                                    <xs:element type="xs:string" name="prenom"/>
+                                                                                </xs:sequence>
+                                                                                <xs:attribute type="xs:byte" name="idJeune"/>
+                                                                            </xs:complexType>
+                                                                        </xs:element>
+                                                                    </xs:sequence>
+                                                                </xs:choice>
+                                                            </xs:complexType>
+                                                        </xs:element>
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                        </xs:sequence>
+                                        <xs:attribute type="xs:byte" name="Reference"/>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:sequence>
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="GroupesScolaires">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="GroupeSco">
+                                <xs:complexType>
+                                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                        <xs:sequence>
+                                            <xs:element type="xs:string" name="nom"/>
+                                            <xs:element name="destination">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element type="xs:string" name="Pays"/>
+                                                        <xs:element type="xs:string" name="Ville"/>
+                                                        <xs:element type="xs:string" name="Residence"/>
+                                                        <xs:element type="xs:string" name="dure"/>
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                            <xs:element type="xs:string" name="langue"/>
+                                            <xs:element name="QuizLangue" minOccurs="1" maxOccurs="unbounded">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element type="xs:string" name="dateQwiz"/>
+                                                        <xs:element type="xs:string" name="nombreQuestion"/>
+                                                        <xs:element type="xs:string" name="detail"/>
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="public">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element name="Adulte">
+                                                            <xs:complexType>
+                                                                <xs:sequence>
+                                                                    <xs:element name="Professeurs">
+                                                                        <xs:complexType>
+                                                                            <xs:sequence>
+                                                                                <xs:element name="Professeur" maxOccurs="unbounded" minOccurs="1"><!-- au moins 1 prof par sortie-->
+                                                                                    <xs:complexType>
+                                                                                        <xs:sequence>
+                                                                                            <xs:element type="xs:string" name="age"/>
+                                                                                            <xs:element type="xs:string" name="nom"/>
+                                                                                            <xs:element type="xs:string" name="prenom"/>
+                                                                                            <xs:element type="xs:string" name="langue"/>
+                                                                                        </xs:sequence>
+                                                                                        <xs:attribute type="xs:byte" name="idProf" use="optional"/>
+                                                                                    </xs:complexType>
+                                                                                </xs:element>
+                                                                            </xs:sequence>
+                                                                        </xs:complexType>
+                                                                    </xs:element>
+                                                                    <xs:element name="ParentsAccompagnateur">
+                                                                        <xs:complexType>
+                                                                            <xs:sequence>
+                                                                                <xs:element name="Parent" maxOccurs="unbounded" minOccurs="0"><!-- un parent n'est pas necessaire-->
+                                                                                    <xs:complexType>
+                                                                                        <xs:sequence>
+                                                                                            <xs:element type="xs:string" name="enfant"/>
+                                                                                            <xs:element type="xs:string" name="nom"/>
+                                                                                            <xs:element type="xs:string" name="prenom"/>
+                                                                                        </xs:sequence>
+                                                                                        <xs:attribute type="xs:byte" name="idParent"/>
+                                                                                    </xs:complexType>
+                                                                                </xs:element>
+                                                                            </xs:sequence>
+                                                                        </xs:complexType>
+                                                                    </xs:element>
+                                                                </xs:sequence>
+                                                            </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="Enfants">
+                                                            <xs:complexType>
+                                                                <xs:sequence>
+                                                                    <xs:element name="Enfant" maxOccurs="unbounded" minOccurs="1"> <!-- au moins 1 eleve par sortie-->
+                                                                        <xs:complexType>
+                                                                            <xs:sequence>
+                                                                                <xs:element type="xs:string" name="age"/>
+                                                                                <xs:element type="xs:string" name="nom"/>
+                                                                                <xs:element type="xs:string" name="prenom"/>
+                                                                            </xs:sequence>
+                                                                            <xs:attribute type="xs:byte" name="idJeune"/>
+                                                                        </xs:complexType>
+                                                                    </xs:element>
+                                                                </xs:sequence>
+                                                            </xs:complexType>
+                                                        </xs:element>
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                        </xs:sequence>
+                                    </xs:choice>
+                                    <xs:attribute type="xs:byte" name="Reference"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Acceuils">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="FamilleAc">
+                                <xs:complexType>
+                                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                        <xs:sequence>
+                                            <xs:element type="xs:string" name="nom"/>
+                                            <xs:element name="destination">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element type="xs:string" name="Pays"/>
+                                                        <xs:element type="xs:string" name="Ville"/>
+                                                        <xs:element type="xs:string" name="Residence"/>
+                                                        <xs:element type="xs:string" name="dure"/>
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                            <xs:element type="xs:string" name="langue"/>
+                                            <xs:element type="xs:string" name="motivation"/>
+                                            <xs:element name="public">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element name="Famille">
+                                                            <xs:complexType>
+                                                                <xs:sequence>
+                                                                    <xs:element name="Parents">
+                                                                        <xs:complexType>
+                                                                            <xs:sequence>
+                                                                                <xs:element name="Parent" maxOccurs="unbounded" minOccurs="1">
+                                                                                    <xs:complexType>
+                                                                                        <xs:sequence>
+                                                                                            <xs:element type="xs:string" name="age"/>
+                                                                                            <xs:element type="xs:string" name="nom"/>
+                                                                                            <xs:element type="xs:string" name="prenom"/>
+                                                                                        </xs:sequence>
+                                                                                        <xs:attribute type="xs:string" name="role" use="optional"/>
+                                                                                    </xs:complexType>
+                                                                                </xs:element>
+                                                                            </xs:sequence>
+                                                                        </xs:complexType>
+                                                                    </xs:element>
+                                                                    <xs:element name="Enfans" maxOccurs="unbounded" minOccurs="0"><!--la personne acceuillant peut ne pas avoir d'enfant-->
+                                                                        <xs:complexType>
+                                                                            <xs:sequence>
+                                                                                <xs:element type="xs:string" name="age"/>
+                                                                                <xs:element type="xs:string" name="nom"/>
+                                                                                <xs:element type="xs:string" name="prenom"/>
+                                                                            </xs:sequence>
+                                                                        </xs:complexType>
+                                                                    </xs:element>
+                                                                </xs:sequence>
+                                                            </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="Jeune" maxOccurs="1" minOccurs="1"><!--il y a exactement un et unique jeune en deplacement-->
+                                                            <xs:complexType>
+                                                                <xs:sequence>
+                                                                    <xs:element type="xs:string" name="nom"/>
+                                                                    <xs:element type="xs:string" name="prenom"/>
+                                                                    <xs:element type="xs:string" name="age"/>
+                                                                </xs:sequence>
+                                                            </xs:complexType>
+                                                        </xs:element>
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                        </xs:sequence>
+                                    </xs:choice>
+                                    <xs:attribute type="xs:byte" name="Reference"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
