@@ -18,10 +18,12 @@
                                                         <xs:element type="xs:string" name="Pays"/>
                                                         <xs:element type="xs:string" name="Ville"/>
                                                         <xs:element type="xs:string" name="Residence"/>
-                                                        <xs:element type="xs:string" name="Duree"/>
+                                                        <xs:element type="xs:string" name="DateDebut"/>
+                                                        <xs:element type="xs:string" name="DateFin"/>
                                                     </xs:sequence>
                                                 </xs:complexType>
                                             </xs:element>
+                                            <xs:element type="xs:int" name="Prix"/>
                                             <xs:element type="xs:string" name="Langue"/>
                                             <xs:element name="Activites">
                                                 <xs:complexType>
@@ -137,10 +139,12 @@
                                                         <xs:element type="xs:string" name="Pays"/>
                                                         <xs:element type="xs:string" name="Ville"/>
                                                         <xs:element type="xs:string" name="Residence"/>
-                                                        <xs:element type="xs:string" name="Duree"/>
+                                                        <xs:element type="xs:string" name="DateDebut"/>
+                                                        <xs:element type="xs:string" name="DateFin"/>
                                                     </xs:sequence>
                                                 </xs:complexType>
                                             </xs:element>
+                                            <xs:element type="xs:int" name="Prix"/>
                                             <xs:element type="xs:string" name="Langue"/>
                                             <xs:element name="Activites">
                                                 <xs:complexType>
@@ -254,12 +258,13 @@
                                                         <xs:element type="xs:string" name="Pays"/>
                                                         <xs:element type="xs:string" name="Ville"/>
                                                         <xs:element type="xs:string" name="Residence"/>
-                                                        <xs:element type="xs:string" name="Duree"/>
+                                                        <xs:element type="xs:string" name="DateDebut"/>
+                                                        <xs:element type="xs:string" name="DateFin"/>
                                                     </xs:sequence>
                                                 </xs:complexType>
                                             </xs:element>
+                                            <xs:element type="xs:int" name="Prix"/>
                                             <xs:element type="xs:string" name="Langue"/>
-                                            <!-- <xs:element type="xs:string" name="motivation"/> -->
                                             <xs:element name="Public">
                                                 <xs:complexType>
                                                     <xs:sequence>

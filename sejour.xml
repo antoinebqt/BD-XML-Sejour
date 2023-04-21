@@ -7,8 +7,10 @@
                 <Pays>Angleterre</Pays>
                 <Ville>Londres</Ville>
                 <Residence>Bermonds Locke</Residence>
-                <Duree>3 mois</Duree>
+                <DateDebut>17/06/2023</DateDebut>
+                <DateFin>30/06/2023</DateFin>
             </Destination>
+            <Prix>1023</Prix>
             <Langue>Anglais</Langue>
             <Activites>
                 <Sportive>
@@ -39,8 +41,8 @@
                         </Intervenant>
                         <Intervenant>
                             <Age>35</Age>
-                            <Nom>oupamecano</Nom>
-                            <Prenom>gerard</Prenom>
+                            <Nom>Oupamecano</Nom>
+                            <Prenom>Gerard</Prenom>
                             <Occupation>Coach Sportif</Occupation>
                         </Intervenant>
                         <Intervenant>
@@ -67,13 +69,15 @@
             </Public>
         </Colonie>
         <Colonie>
-            <Nom>sale voleyeur</Nom>
+            <Nom>Uwu Holidays</Nom>
             <Destination>
                 <Pays>Japon</Pays>
                 <Ville>Tokyo</Ville>
-                <Residence>Tokyo 5 stars tkt</Residence>
-                <Duree>1 mois</Duree>
+                <Residence>Tokyo 5 stars</Residence>
+                <DateDebut>10/06/2023</DateDebut>
+                <DateFin>30/06/2023</DateFin>
             </Destination>
+            <Prix>631</Prix>
             <Langue>Japonais</Langue>
             <Activites>
                 <Sportive>
@@ -87,8 +91,8 @@
                     <Animateurs>
                         <Animateur>
                             <Age>24</Age>
-                            <Nom>bassy</Nom>
-                            <Prenom>ayman</Prenom>
+                            <Nom>Bassy</Nom>
+                            <Prenom>Ayman</Prenom>
                         </Animateur>
                     </Animateurs>
                     <Intervenants>
@@ -100,8 +104,8 @@
                         </Intervenant>
                         <Intervenant>
                             <Age>21</Age>
-                            <Nom>kishimoto</Nom>
-                            <Prenom>kohei</Prenom>
+                            <Nom>Kishimoto</Nom>
+                            <Prenom>kKhei</Prenom>
                             <Occupation>Joueur de Volley</Occupation>
                         </Intervenant>
                     </Intervenants>
@@ -123,8 +127,10 @@
                 <Pays>Angleterre</Pays>
                 <Ville>Londres</Ville>
                 <Residence>Bermonds Locke</Residence>
-                <Duree>3 mois</Duree>
+                <DateDebut>12/06/2023</DateDebut>
+                <DateFin>25/06/2023</DateFin>
             </Destination>
+            <Prix>345</Prix>
             <Langue>Anglais</Langue>
             <Activites>
                 <QuizLangue>
@@ -182,8 +188,10 @@
                 <Pays>Angleterre</Pays>
                 <Ville>Londres</Ville>
                 <Residence>Bermonds Locke</Residence>
-                <Duree>3 mois</Duree>
+                <DateDebut>01/06/2023</DateDebut>
+                <DateFin>01/09/2023</DateFin>
             </Destination>
+            <Prix>2210</Prix>
             <Langue>Anglais</Langue>
             <Public>
                 <Famille> <!-- pour les parents, il peut y avoir 1 ou 2 parents, voir 2 parents avec le meme role
