@@ -7,8 +7,8 @@
                 <Pays>Angleterre</Pays>
                 <Ville>Londres</Ville>
                 <Residence>Bermonds Locke</Residence>
-                <DateDebut>17/06/2023</DateDebut>
-                <DateFin>30/06/2023</DateFin>
+                <DateDebut>17/05/2023</DateDebut>
+                <DateFin>30/03/2023</DateFin>
             </Destination>
             <Prix>1023</Prix>
             <Langue>Anglais</Langue>
@@ -16,11 +16,14 @@
                 <Sportive>
                     <Sport>Foot</Sport>
                     <Lieu>London Football Club</Lieu>
-                    <Date>21/06/2023</Date>
+                    <Date>21/03/2023</Date>
+                    <Duree>2 heures</Duree>
                 </Sportive>
                 <Culturelle>
+                    <Nom>Visite de musée</Nom>
                     <Lieu>British Museum</Lieu>
-                    <Date>26/06/2023</Date>
+                    <Date>26/03/2023</Date>
+                    <Duree>3 heures</Duree>
                 </Culturelle>
             </Activites>
             <Public>
@@ -30,6 +33,11 @@
                             <Age>31</Age>
                             <Nom>Hakimi</Nom>
                             <Prenom>Achraf</Prenom>
+                        </Animateur>
+                        <Animateur idAnimateur="2">
+                            <Age>23</Age>
+                            <Nom>Buquet</Nom>
+                            <Prenom>Antoine</Prenom>
                         </Animateur>
                     </Animateurs>
                     <Intervenants>
@@ -74,8 +82,8 @@
                 <Pays>Japon</Pays>
                 <Ville>Tokyo</Ville>
                 <Residence>Tokyo 5 stars</Residence>
-                <DateDebut>10/06/2023</DateDebut>
-                <DateFin>30/06/2023</DateFin>
+                <DateDebut>10/04/2023</DateDebut>
+                <DateFin>30/04/2023</DateFin>
             </Destination>
             <Prix>631</Prix>
             <Langue>Japonais</Langue>
@@ -84,6 +92,7 @@
                     <Sport>Foot</Sport>
                     <Lieu>London Football Club</Lieu>
                     <Date>21/06/2023</Date>
+                    <Duree>2 heures</Duree>
                 </Sportive>
             </Activites>
             <Public>
@@ -105,7 +114,7 @@
                         <Intervenant>
                             <Age>21</Age>
                             <Nom>Kishimoto</Nom>
-                            <Prenom>kKhei</Prenom>
+                            <Prenom>Khei</Prenom>
                             <Occupation>Joueur de Volley</Occupation>
                         </Intervenant>
                     </Intervenants>
@@ -134,10 +143,11 @@
             <Langue>Anglais</Langue>
             <Activites>
                 <QuizLangue>
+                    <Nom>Questionnaire sur les animaux de la ferme en anglais</Nom>
                     <Date>21/06/2023</Date>
-                    <NombreQuestion>10</NombreQuestion>
-                    <Detail>Questionnaire sur les animaux de la ferme en anglais</Detail>
+                    <Duree>20 minutes</Duree>
                     <Langue>Anglais</Langue>
+                    <NombreQuestion>10</NombreQuestion>
                 </QuizLangue>
                 <CoursLangue>
                     <Date>21/06/2023</Date>
@@ -153,26 +163,26 @@
                             <Age>51</Age>
                             <Nom>Lemor</Nom>
                             <Prenom>Joel</Prenom>
-                            <Langue>Anglais</Langue>
+                            <Matiere>Anglais</Matiere>
                         </Professeur>
                         <Professeur idProfesseur = "2">
                             <Age>24</Age>
-                            <Nom>Gonzales </Nom>
+                            <Nom>Gonzales</Nom>
                             <Prenom>Miguel</Prenom>
-                            <Langue>Espagnol</Langue>
+                            <Matiere>Espagnol</Matiere>
                         </Professeur>
                     </Professeurs>
-                    <Parents>
+                    <ParentsAccompagnateur>
                         <Parent idParent = "1">
                             <Age>35</Age>
                             <Nom>Chan </Nom>
                             <Prenom>Jacky</Prenom>
-                            <JeuneId>1</JeuneId>
+                            <JeuneId>2</JeuneId>
                         </Parent>
-                    </Parents>
+                    </ParentsAccompagnateur>
                 </Adultes>
                 <Jeunes>
-                    <Jeune idJeune="1">
+                    <Jeune idJeune="2">
                         <Age>9</Age>
                         <Nom>Chan</Nom>
                         <Prenom>Kilian</Prenom>
@@ -197,12 +207,12 @@
                 <Famille> <!-- pour les parents, il peut y avoir 1 ou 2 parents, voir 2 parents avec le meme role
                                     ou voir meme un role de type tuteur, concernant les enfants, la famille peut ou non en avoir -->
                     <Adultes>
-                        <Adulte role="pere">
+                        <Adulte role="Père">
                             <Age>51</Age>
                             <Nom>Vioreu</Nom>
                             <Prenom>Clement</Prenom>
                         </Adulte>
-                        <Adulte role="mere">
+                        <Adulte role="Mère">
                             <Age>43</Age>
                             <Nom>Vioreu</Nom>
                             <Prenom>Margaux</Prenom>
