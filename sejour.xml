@@ -2,7 +2,7 @@
 <Sejours xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="sejourSchema.xsd"> <!-- Ici l'en-tête de base pour un ensemble de séjours linguistique à l'étranger, il y a 3 type de séjour -->
     <Colonies> <!-- Premier type de séjour, les colonies de vacances, balise qui représente la liste des différentes colonies -->
         <Colonie Reference="1" > <!-- Une colonie parmi d'autres, avec une reference unique (id) -->
-            <Nom>Colonie1</Nom>
+            <Nom>les fou fouteux</Nom>
             <Destination>
                 <Pays>Angleterre</Pays>
                 <Ville>Londres</Ville>
@@ -37,6 +37,24 @@
                             <Prenom>yi</Prenom>
                             <Occupation>Guide touristique</Occupation>
                         </Intervenant>
+                        <Intervenant>
+                            <Age>35</Age>
+                            <Nom>oupamecano</Nom>
+                            <Prenom>gerard</Prenom>
+                            <Occupation>Coach Sportif</Occupation>
+                        </Intervenant>
+                        <Intervenant>
+                            <Age>24</Age>
+                            <Nom>Grizman</Nom>
+                            <Prenom>Antoine</Prenom>
+                            <Occupation>Joueur de Foot</Occupation>
+                        </Intervenant>
+                        <Intervenant>
+                            <Age>21</Age>
+                            <Nom>Félix</Nom>
+                            <Prenom>João</Prenom>
+                            <Occupation>Joueur de Foot</Occupation>
+                        </Intervenant>
                     </Intervenants>
                 </Adultes>
                 <Jeunes>
@@ -44,6 +62,55 @@
                         <Age>9</Age>
                         <Nom>Bonnet</Nom>
                         <Prenom>Kilian</Prenom>
+                    </Jeune>
+                </Jeunes>
+            </Public>
+        </Colonie>
+        <Colonie>
+            <Nom>sale voleyeur</Nom>
+            <Destination>
+                <Pays>Japon</Pays>
+                <Ville>Tokyo</Ville>
+                <Residence>Tokyo 5 stars tkt</Residence>
+                <Duree>1 mois</Duree>
+            </Destination>
+            <Langue>Japonais</Langue>
+            <Activites>
+                <Sportive>
+                    <Sport>Foot</Sport>
+                    <Lieu>London Football Club</Lieu>
+                    <Date>21/06/2023</Date>
+                </Sportive>
+            </Activites>
+            <Public>
+                <Adultes>
+                    <Animateurs>
+                        <Animateur>
+                            <Age>24</Age>
+                            <Nom>bassy</Nom>
+                            <Prenom>ayman</Prenom>
+                        </Animateur>
+                    </Animateurs>
+                    <Intervenants>
+                        <Intervenant>
+                            <Age>41</Age>
+                            <Nom>DansGarage</Nom>
+                            <Prenom>Yamamoto</Prenom>
+                            <Occupation>Coach De Volley</Occupation>
+                        </Intervenant>
+                        <Intervenant>
+                            <Age>21</Age>
+                            <Nom>kishimoto</Nom>
+                            <Prenom>kohei</Prenom>
+                            <Occupation>Joueur de Volley</Occupation>
+                        </Intervenant>
+                    </Intervenants>
+                </Adultes>
+                <Jeunes>
+                    <Jeune>
+                        <Age></Age>
+                        <Nom></Nom>
+                        <Prenom></Prenom>
                     </Jeune>
                 </Jeunes>
             </Public>
