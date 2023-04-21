@@ -108,9 +108,9 @@
                 </Adultes>
                 <Jeunes>
                     <Jeune>
-                        <Age></Age>
-                        <Nom></Nom>
-                        <Prenom></Prenom>
+                        <Age>13</Age>
+                        <Nom>Barack</Nom>
+                        <Prenom>Obama</Prenom>
                     </Jeune>
                 </Jeunes>
             </Public>
