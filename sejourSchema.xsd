@@ -79,10 +79,10 @@
                                                                                     <xs:element name="Intervenant">
                                                                                         <xs:complexType>
                                                                                             <xs:sequence>
-                                                                                                <xs:element type="xs:string" name="Occupation"/>
                                                                                                 <xs:element type="xs:string" name="Age"/>
                                                                                                 <xs:element type="xs:string" name="Nom"/>
                                                                                                 <xs:element type="xs:string" name="Prenom"/>
+                                                                                                <xs:element type="xs:string" name="Occupation"/>
                                                                                             </xs:sequence>
                                                                                             <xs:attribute type="xs:byte" name="idIntervenant"/>
                                                                                         </xs:complexType>
@@ -303,9 +303,9 @@
                                                         <xs:element name="Jeune"> <!--il y a exactement un et unique jeune en déplacement -->
                                                             <xs:complexType>
                                                                 <xs:sequence>
+                                                                    <xs:element type="xs:string" name="Age"/>
                                                                     <xs:element type="xs:string" name="Nom"/>
                                                                     <xs:element type="xs:string" name="Prenom"/>
-                                                                    <xs:element type="xs:string" name="Age"/>
                                                                 </xs:sequence>
                                                             </xs:complexType>
                                                         </xs:element>

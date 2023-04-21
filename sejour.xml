@@ -32,10 +32,10 @@
                     </Animateurs>
                     <Intervenants>
                         <Intervenant idIntervenant="1">
-                            <Occupation>Guide touristique</Occupation>
                             <Age>22</Age>
                             <Nom>WU</Nom>
                             <Prenom>yi</Prenom>
+                            <Occupation>Guide touristique</Occupation>
                         </Intervenant>
                     </Intervenants>
                 </Adultes>
@@ -142,9 +142,9 @@
                     </Jeunes>
                 </Famille>
                 <Jeune> <!-- il y a un jeune par famille d'accueil -->
+                    <Age>14</Age>
                     <Nom>Hatier</Nom>
                     <Prenom>Louis</Prenom>
-                    <Age>14</Age>
                 </Jeune>
             </Public>
         </Accueil>
