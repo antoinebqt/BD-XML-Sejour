@@ -180,7 +180,7 @@
                     <ParentsAccompagnateur>
                         <Parent idParent = "1">
                             <Age>35</Age>
-                            <Nom>Chan </Nom>
+                            <Nom>Chan</Nom>
                             <Prenom>Jacky</Prenom>
                             <JeuneId>2</JeuneId>
                         </Parent>
