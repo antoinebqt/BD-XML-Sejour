@@ -121,7 +121,7 @@
                                                 </xs:complexType>
                                             </xs:element>
                                         </xs:sequence>
-                                        <xs:attribute type="xs:byte" name="Reference"/>
+                                        <xs:attribute type="xs:byte" name="Reference" use="required"/>
                                     </xs:complexType>
                                 </xs:element>
                             </xs:sequence>
@@ -170,7 +170,7 @@
                                                                         <xs:element type="xs:string" name="Date"/>
                                                                         <xs:element type="xs:string" name="Duree"/>
                                                                         <xs:element type="xs:string" name="Langue"/>
-                                                                        <xs:element type="xs:string" name="ProfesseurId"/>
+                                                                        <xs:element type="xs:byte" name="ProfesseurId"/>
                                                                     </xs:sequence>
                                                                 </xs:complexType>
                                                             </xs:element>
@@ -195,7 +195,7 @@
                                                                                             <xs:element type="xs:string" name="Prenom"/>
                                                                                             <xs:element type="xs:string" name="Matiere"/>
                                                                                         </xs:sequence>
-                                                                                        <xs:attribute type="xs:string" name="idProfesseur"/>
+                                                                                        <xs:attribute type="xs:byte" name="idProfesseur"/>
                                                                                     </xs:complexType>
                                                                                 </xs:element>
                                                                             </xs:sequence>
@@ -242,7 +242,7 @@
                                             </xs:element>
                                         </xs:sequence>
                                     </xs:choice>
-                                    <xs:attribute type="xs:byte" name="Reference"/>
+                                    <xs:attribute type="xs:byte" name="Reference" use="required"/>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
@@ -275,35 +275,14 @@
                                                         <xs:element name="Famille">
                                                             <xs:complexType>
                                                                 <xs:sequence>
-                                                                    <xs:element name="Adultes">
+                                                                    <xs:element name="Membre" maxOccurs="unbounded">
                                                                         <xs:complexType>
                                                                             <xs:sequence>
-                                                                                <xs:element name="Adulte" maxOccurs="unbounded">
-                                                                                    <xs:complexType>
-                                                                                        <xs:sequence>
-                                                                                            <xs:element type="xs:string" name="Age"/>
-                                                                                            <xs:element type="xs:string" name="Nom"/>
-                                                                                            <xs:element type="xs:string" name="Prenom"/>
-                                                                                        </xs:sequence>
-                                                                                        <xs:attribute type="xs:string" name="role" use="required"/>
-                                                                                    </xs:complexType>
-                                                                                </xs:element>
+                                                                                <xs:element type="xs:string" name="Age"/>
+                                                                                <xs:element type="xs:string" name="Nom"/>
+                                                                                <xs:element type="xs:string" name="Prenom"/>
                                                                             </xs:sequence>
-                                                                        </xs:complexType>
-                                                                    </xs:element>
-                                                                    <xs:element name="Jeunes">
-                                                                        <xs:complexType>
-                                                                            <xs:sequence>
-                                                                                <xs:element name="Jeune" maxOccurs="unbounded" minOccurs="0"> <!--la personne accueillante peut ne pas avoir d'enfant -->
-                                                                                    <xs:complexType>
-                                                                                        <xs:sequence>
-                                                                                            <xs:element type="xs:string" name="Age"/>
-                                                                                            <xs:element type="xs:string" name="Nom"/>
-                                                                                            <xs:element type="xs:string" name="Prenom"/>
-                                                                                        </xs:sequence>
-                                                                                    </xs:complexType>
-                                                                                </xs:element>
-                                                                            </xs:sequence>
+                                                                            <xs:attribute type="xs:string" name="role" use="required"/>
                                                                         </xs:complexType>
                                                                     </xs:element>
                                                                 </xs:sequence>
@@ -323,7 +302,7 @@
                                             </xs:element>
                                         </xs:sequence>
                                     </xs:choice>
-                                    <xs:attribute type="xs:byte" name="Reference"/>
+                                    <xs:attribute type="xs:byte" name="Reference" use="required"/>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>

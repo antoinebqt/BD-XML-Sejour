@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Sejours xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="sejourSchema.xsd"> <!-- Ici l'en-tête de base pour un ensemble de séjours linguistique à l'étranger, il y a 3 type de séjour -->
     <Colonies> <!-- Premier type de séjour, les colonies de vacances, balise qui représente la liste des différentes colonies -->
-        <Colonie Reference="1" > <!-- Une colonie parmi d'autres, avec une reference unique (id) -->
+        <Colonie Reference="1"> <!-- Une colonie parmi d'autres, avec une reference unique (id) -->
             <Nom>les fou fouteux</Nom>
             <Destination>
                 <Pays>Angleterre</Pays>
@@ -76,7 +76,7 @@
                 </Jeunes>
             </Public>
         </Colonie>
-        <Colonie>
+        <Colonie Reference="4">
             <Nom>Uwu Holidays</Nom>
             <Destination>
                 <Pays>Japon</Pays>
@@ -206,25 +206,21 @@
             <Public>
                 <Famille> <!-- pour les parents, il peut y avoir 1 ou 2 parents, voir 2 parents avec le meme role
                                     ou voir meme un role de type tuteur, concernant les enfants, la famille peut ou non en avoir -->
-                    <Adultes>
-                        <Adulte role="Père">
-                            <Age>51</Age>
-                            <Nom>Vioreu</Nom>
-                            <Prenom>Clement</Prenom>
-                        </Adulte>
-                        <Adulte role="Mère">
-                            <Age>43</Age>
-                            <Nom>Vioreu</Nom>
-                            <Prenom>Margaux</Prenom>
-                        </Adulte>
-                    </Adultes>
-                    <Jeunes>
-                        <Jeune>
-                            <Age>12</Age>
-                            <Nom>Vioreu</Nom>
-                            <Prenom>Yassine</Prenom>
-                        </Jeune>
-                    </Jeunes>
+                    <Membre role="Père">
+                        <Age>51</Age>
+                        <Nom>Vioreu</Nom>
+                        <Prenom>Clement</Prenom>
+                    </Membre>
+                    <Membre role="Mère">
+                        <Age>43</Age>
+                        <Nom>Vioreu</Nom>
+                        <Prenom>Margaux</Prenom>
+                    </Membre>
+                    <Membre role="Enfant">
+                        <Age>12</Age>
+                        <Nom>Vioreu</Nom>
+                        <Prenom>Yassine</Prenom>
+                    </Membre>
                 </Famille>
                 <Jeune> <!-- il y a un jeune par famille d'accueil -->
                     <Age>14</Age>

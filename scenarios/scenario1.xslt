@@ -4,31 +4,7 @@
         <html>
             <head>
                 <title>Colonies et intervenants</title>
-                <style>
-                    /* Style pour la table */
-                    table {
-                    border-collapse: collapse;
-                    width: 100%;
-                    margin-bottom: 20px;
-                    }
-                    th, td {
-                    text-align: left;
-                    padding: 8px;
-                    border: 1px solid black;
-                    }
-                    th {
-                    background-color: #4CAF50;
-                    color: white;
-                    }
-                    tr:nth-child(even) {
-                    background-color: #f2f2f2;
-                    }
-                    p {
-                    font-weight: bold;
-                    font-size: 1.2em;
-                    margin: 10px 0;
-                    }
-                </style>
+                <link rel="stylesheet" href="style.css"/>
             </head>
             <body>
                 <xsl:apply-templates select="//Colonie"/>

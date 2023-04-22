@@ -4,18 +4,18 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title>Liste des séjours</title>
+                <title>Liste des séjours en Angleterre</title>
                 <link rel="stylesheet" href="style.css"/>
             </head>
             <body>
-                <h1>Liste des colonies de vacances</h1>
-                <xsl:apply-templates select="Sejours/Colonies/Colonie"/>
+                <h1>Liste des colonies de vacances en Angleterre</h1>
+                <xsl:apply-templates select="Sejours/Colonies/Colonie[Destination/Pays='Angleterre']"/>
 
-                <h1>Liste des groupes scolaires</h1>
-                <xsl:apply-templates select="Sejours/GroupesScolaires/Groupe"/>
+                <h1>Liste des groupes scolaires en Angleterre</h1>
+                <xsl:apply-templates select="Sejours/GroupesScolaires/Groupe[Destination/Pays='Angleterre']"/>
 
-                <h1>Liste des immersions en familles</h1>
-                <xsl:apply-templates select="Sejours/Accueils/Accueil"/>
+                <h1>Liste des immersions en familles en Angleterre</h1>
+                <xsl:apply-templates select="Sejours/Accueils/Accueil[Destination/Pays='Angleterre']"/>
             </body>
         </html>
     </xsl:template>
@@ -320,14 +320,9 @@
                 <tr>
                     <th>Famille</th>
                     <td>
-                        <xsl:for-each select="Public/Famille/Adultes/Adulte">
+                        <xsl:for-each select="Public/Famille/Membre">
                             <p>
                                 <xsl:value-of select="Prenom"/><xsl:text> </xsl:text><xsl:value-of select="Nom"/>, <xsl:value-of select="Age"/> ans (<xsl:value-of select="@role"/>)
-                            </p>
-                        </xsl:for-each>
-                        <xsl:for-each select="Public/Famille/Jeunes/Jeune">
-                            <p>
-                                <xsl:value-of select="Prenom"/><xsl:text> </xsl:text><xsl:value-of select="Nom"/>, <xsl:value-of select="Age"/> ans
                             </p>
                         </xsl:for-each>
                     </td>
