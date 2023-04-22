@@ -1,0 +1,35 @@
+{
+  "Colonie les fou fouteux": [
+    {
+      "Nom": "Bonnet",
+      "Prenom": "Kilian",
+      "Age": "9"
+    },
+    {
+      "Nom": "Aulass",
+      "Prenom": "Jean-Michel",
+      "Age": "8"
+    }
+  ],
+  "Colonie Uwu Holidays": [
+    {
+      "Nom": "Barack",
+      "Prenom": "Obama",
+      "Age": "13"
+    }
+  ],
+  "Groupe Groupe scolaire 1": [
+    {
+      "Nom": "Chan",
+      "Prenom": "Kilian",
+      "Age": "9"
+    }
+  ],
+  "Accueil Famille 1": [
+    {
+      "Nom": "Hatier",
+      "Prenom": "Louis",
+      "Age": "14"
+    }
+  ]
+}

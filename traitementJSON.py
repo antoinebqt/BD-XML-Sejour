@@ -22,6 +22,6 @@ for element in root.iter():
         sortie[nom_groupe] = jeunes
 
 # Écriture du résultat dans un fichier JSON
-with open("sortie.json", "w") as fichier_sortie:
-    json.dump(sortie, fichier_sortie)
+with open("outputs/sortie.json", "w") as fichier_sortie:
+    json.dump(sortie, fichier_sortie,indent=2)
 
