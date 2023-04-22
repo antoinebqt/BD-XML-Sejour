@@ -29,26 +29,30 @@
                                                 <xs:complexType>
                                                     <xs:choice minOccurs="0" maxOccurs="unbounded">
                                                         <xs:sequence>
-                                                            <xs:element name="Sportive">
-                                                                <xs:complexType>
-                                                                    <xs:sequence>
-                                                                        <xs:element type="xs:string" name="Sport"/>
-                                                                        <xs:element type="xs:string" name="Lieu"/>
-                                                                        <xs:element type="xs:string" name="Date"/>
-                                                                        <xs:element type="xs:string" name="Duree"/>
-                                                                    </xs:sequence>
-                                                                </xs:complexType>
-                                                            </xs:element>
-                                                            <xs:element name="Culturelle" minOccurs="0">
-                                                                <xs:complexType>
-                                                                    <xs:sequence>
-                                                                        <xs:element type="xs:string" name="Nom"/>
-                                                                        <xs:element type="xs:string" name="Lieu"/>
-                                                                        <xs:element type="xs:string" name="Date"/>
-                                                                        <xs:element type="xs:string" name="Duree"/>
-                                                                    </xs:sequence>
-                                                                </xs:complexType>
-                                                            </xs:element>
+                                                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                                <xs:element name="Sportive">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="Sport"/>
+                                                                            <xs:element type="xs:string" name="Lieu"/>
+                                                                            <xs:element type="xs:string" name="Date"/>
+                                                                            <xs:element type="xs:string" name="Duree"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:choice>
+                                                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                                <xs:element name="Culturelle" minOccurs="0">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="Nom"/>
+                                                                            <xs:element type="xs:string" name="Lieu"/>
+                                                                            <xs:element type="xs:string" name="Date"/>
+                                                                            <xs:element type="xs:string" name="Duree"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:choice>
                                                         </xs:sequence>
                                                     </xs:choice>
                                                 </xs:complexType>
@@ -131,9 +135,9 @@
                 <xs:element name="GroupesScolaires">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="Groupe">
-                                <xs:complexType>
-                                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                <xs:element name="Groupe">
+                                    <xs:complexType>
                                         <xs:sequence>
                                             <xs:element type="xs:string" name="Nom"/>
                                             <xs:element name="Destination">
@@ -151,8 +155,8 @@
                                             <xs:element type="xs:string" name="Langue"/>
                                             <xs:element name="Activites">
                                                 <xs:complexType>
-                                                    <xs:choice minOccurs="0" maxOccurs="unbounded">
-                                                        <xs:sequence>
+                                                    <xs:sequence>
+                                                        <xs:choice minOccurs="0" maxOccurs="unbounded">
                                                             <xs:element name="QuizLangue">
                                                                 <xs:complexType>
                                                                     <xs:sequence>
@@ -174,8 +178,8 @@
                                                                     </xs:sequence>
                                                                 </xs:complexType>
                                                             </xs:element>
-                                                        </xs:sequence>
-                                                    </xs:choice>
+                                                        </xs:choice>
+                                                    </xs:sequence>
                                                 </xs:complexType>
                                             </xs:element>
                                             <xs:element name="Public">
@@ -241,19 +245,19 @@
                                                 </xs:complexType>
                                             </xs:element>
                                         </xs:sequence>
-                                    </xs:choice>
-                                    <xs:attribute type="xs:byte" name="Reference" use="required"/>
-                                </xs:complexType>
-                            </xs:element>
+                                        <xs:attribute type="xs:byte" name="Reference" use="required"/>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:choice>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
                 <xs:element name="Accueils">
                     <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="Accueil">
-                                <xs:complexType>
-                                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:choice minOccurs="0" maxOccurs="unbounded">
+                            <xs:sequence>
+                                <xs:element name="Accueil">
+                                    <xs:complexType>
                                         <xs:sequence>
                                             <xs:element type="xs:string" name="Nom"/>
                                             <xs:element name="Destination">
@@ -301,11 +305,11 @@
                                                 </xs:complexType>
                                             </xs:element>
                                         </xs:sequence>
-                                    </xs:choice>
-                                    <xs:attribute type="xs:byte" name="Reference" use="required"/>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
+                                        <xs:attribute type="xs:byte" name="Reference" use="required"/>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:sequence>
+                        </xs:choice>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>

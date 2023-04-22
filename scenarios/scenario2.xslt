@@ -40,7 +40,7 @@
                                 count(Sejours/GroupesScolaires/Groupe/Public/Jeunes/Jeune) +
                                 count(Sejours/Accueils/Accueil/Public/Jeune)" />
                 </xsl:variable>
-                <p>Moyenne d'âge des jeunes : <xsl:value-of select="$totalAge div $totalJeunes"/></p>
+                <p>Moyenne d'âge des jeunes : <xsl:value-of select="$totalAge div $totalJeunes"/> ans</p>
                 <p>Nombre de jeunes : <xsl:value-of select="$totalJeunes"/></p>
 
                 <xsl:variable name="all_ages" select="//Jeune/Age"/>
@@ -63,8 +63,8 @@
                     </xsl:for-each>
                 </xsl:variable>
 
-                <p>Âge minimum : <xsl:value-of select="$age_min_all"/></p>
-                <p>Âge maximum : <xsl:value-of select="$age_max_all"/></p>
+                <p>Âge minimum : <xsl:value-of select="$age_min_all"/> ans</p>
+                <p>Âge maximum : <xsl:value-of select="$age_max_all"/> ans</p>
 
                 <h2>Stats sur les prix</h2>
                 <xsl:variable name="totalPrix">
@@ -152,7 +152,7 @@
                 <xsl:variable name="totalJeunesColonie">
                     <xsl:value-of select="count(Sejours/Colonies/Colonie/Public/Jeunes/Jeune)" />
                 </xsl:variable>
-                <p>Moyenne d'âge des jeunes : <xsl:value-of select="$totalAgeColonie div $totalJeunesColonie"/></p>
+                <p>Moyenne d'âge des jeunes : <xsl:value-of select="$totalAgeColonie div $totalJeunesColonie"/> ans</p>
                 <p>Nombre de jeunes : <xsl:value-of select="$totalJeunesColonie"/></p>
 
                 <xsl:variable name="all_ages_colonie" select="//Sejours/Colonies/Colonie/Public/Jeunes/Jeune/Age"/>
@@ -175,8 +175,8 @@
                     </xsl:for-each>
                 </xsl:variable>
 
-                <p>Âge minimum : <xsl:value-of select="$age_min_all_colonie"/></p>
-                <p>Âge maximum : <xsl:value-of select="$age_max_all_colonie"/></p>
+                <p>Âge minimum : <xsl:value-of select="$age_min_all_colonie"/> ans</p>
+                <p>Âge maximum : <xsl:value-of select="$age_max_all_colonie"/> ans</p>
 
                 <h2>Stats sur les prix</h2>
                 <xsl:variable name="totalPrixColonie">
@@ -270,7 +270,7 @@
                 <xsl:variable name="totalJeunesGroupe">
                     <xsl:value-of select="count(Sejours/GroupesScolaires/Groupe/Public/Jeunes/Jeune/Age)" />
                 </xsl:variable>
-                <p>Moyenne d'âge des jeunes : <xsl:value-of select="$totalAgeGroupe div $totalJeunesGroupe"/></p>
+                <p>Moyenne d'âge des jeunes : <xsl:value-of select="$totalAgeGroupe div $totalJeunesGroupe"/> ans</p>
                 <p>Nombre de jeunes : <xsl:value-of select="$totalJeunesGroupe"/></p>
 
                 <xsl:variable name="all_ages_groupe" select="//Sejours/GroupesScolaires/Groupe/Public/Jeunes/Jeune/Age"/>
@@ -293,8 +293,8 @@
                     </xsl:for-each>
                 </xsl:variable>
 
-                <p>Âge minimum : <xsl:value-of select="$age_min_all_groupe"/></p>
-                <p>Âge maximum : <xsl:value-of select="$age_max_all_groupe"/></p>
+                <p>Âge minimum : <xsl:value-of select="$age_min_all_groupe"/> ans</p>
+                <p>Âge maximum : <xsl:value-of select="$age_max_all_groupe"/> ans</p>
 
                 <h2>Stats sur les prix</h2>
                 <xsl:variable name="totalPrixGroupe">
@@ -384,7 +384,7 @@
                 <xsl:variable name="totalJeunesAccueil">
                     <xsl:value-of select="count(Sejours/Accueils/Accueil/Public/Jeune/Age)" />
                 </xsl:variable>
-                <p>Moyenne d'âge des jeunes : <xsl:value-of select="$totalAgeAccueil div $totalJeunesAccueil"/></p>
+                <p>Moyenne d'âge des jeunes : <xsl:value-of select="$totalAgeAccueil div $totalJeunesAccueil"/> ans</p>
                 <p>Nombre de jeunes : <xsl:value-of select="$totalJeunesAccueil"/></p>
 
                 <xsl:variable name="all_ages_accueil" select="Sejours/Accueils/Accueil/Public/Jeune/Age"/>
@@ -407,8 +407,8 @@
                     </xsl:for-each>
                 </xsl:variable>
 
-                <p>Âge minimum : <xsl:value-of select="$age_min_all_accueil"/></p>
-                <p>Âge maximum : <xsl:value-of select="$age_max_all_accueil"/></p>
+                <p>Âge minimum : <xsl:value-of select="$age_min_all_accueil"/> ans</p>
+                <p>Âge maximum : <xsl:value-of select="$age_max_all_accueil"/> ans</p>
 
                 <h2>Stats sur les prix</h2>
                 <xsl:variable name="totalPrixAccueil">

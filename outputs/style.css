@@ -5,6 +5,7 @@ body {
 table {
     border-collapse: collapse;
     width: 100%;
+    margin: 5px 0;
 }
 
 th, td {
@@ -33,6 +34,8 @@ p {
 
 hr {
     margin-bottom: 50px;
+    background-color: #4CAF50;
+    height: 2px;
 }
 
 h1 {

@@ -2,29 +2,47 @@
 <Sejours xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="sejourSchema.xsd"> <!-- Ici l'en-tête de base pour un ensemble de séjours linguistique à l'étranger, il y a 3 type de séjour -->
     <Colonies> <!-- Premier type de séjour, les colonies de vacances, balise qui représente la liste des différentes colonies -->
         <Colonie Reference="1"> <!-- Une colonie parmi d'autres, avec une reference unique (id) -->
-            <Nom>les fou fouteux</Nom>
+            <Nom>Cap Juniors</Nom>
             <Destination>
                 <Pays>Angleterre</Pays>
                 <Ville>Londres</Ville>
                 <Residence>Bermonds Locke</Residence>
                 <DateDebut>17/05/2023</DateDebut>
-                <DateFin>30/03/2023</DateFin>
+                <DateFin>30/05/2023</DateFin>
             </Destination>
-            <Prix>1023</Prix>
+            <Prix>1098</Prix>
             <Langue>Anglais</Langue>
             <Activites>
                 <Sportive>
                     <Sport>Foot</Sport>
                     <Lieu>London Football Club</Lieu>
-                    <Date>21/03/2023</Date>
+                    <Date>19/05/2023</Date>
+                    <Duree>3 heures</Duree>
+                </Sportive>
+                <Sportive>
+                    <Sport>Foot</Sport>
+                    <Lieu>London Football Club</Lieu>
+                    <Date>21/05/2023</Date>
                     <Duree>2 heures</Duree>
                 </Sportive>
                 <Culturelle>
-                    <Nom>Visite de musée</Nom>
+                    <Nom>Visite du Palais de Buckingham</Nom>
+                    <Lieu>Palais de Buckingham</Lieu>
+                    <Date>18/05/2023</Date>
+                    <Duree>2 heures</Duree>
+                </Culturelle>
+                <Culturelle>
+                    <Nom>Visite du British Museum</Nom>
                     <Lieu>British Museum</Lieu>
-                    <Date>26/03/2023</Date>
+                    <Date>26/05/2023</Date>
                     <Duree>3 heures</Duree>
                 </Culturelle>
+                <Sportive>
+                    <Sport>Foot</Sport>
+                    <Lieu>London Football Club</Lieu>
+                    <Date>29/05/2023</Date>
+                    <Duree>3 heures</Duree>
+                </Sportive>
             </Activites>
             <Public>
                 <Adultes>
@@ -43,19 +61,19 @@
                     <Intervenants>
                         <Intervenant idIntervenant="1">
                             <Age>22</Age>
-                            <Nom>WU</Nom>
-                            <Prenom>yi</Prenom>
+                            <Nom>Smith</Nom>
+                            <Prenom>John</Prenom>
                             <Occupation>Guide touristique</Occupation>
                         </Intervenant>
                         <Intervenant>
                             <Age>35</Age>
-                            <Nom>Oupamecano</Nom>
-                            <Prenom>Gerard</Prenom>
+                            <Nom>Southgate</Nom>
+                            <Prenom>Gareth</Prenom>
                             <Occupation>Coach Sportif</Occupation>
                         </Intervenant>
                         <Intervenant>
                             <Age>24</Age>
-                            <Nom>Grizman</Nom>
+                            <Nom>Griezmann</Nom>
                             <Prenom>Antoine</Prenom>
                             <Occupation>Joueur de Foot</Occupation>
                         </Intervenant>
@@ -75,29 +93,40 @@
                     </Jeune>
                     <Jeune>
                         <Age>8</Age>
-                        <Nom>Aulass</Nom>
+                        <Nom>Auglass</Nom>
                         <Prenom>Jean-Michel</Prenom>
+                    </Jeune>
+                    <Jeune>
+                        <Age>15</Age>
+                        <Nom>Imami</Nom>
+                        <Prenom>Ayoub</Prenom>
                     </Jeune>
                 </Jeunes>
             </Public>
         </Colonie>
-        <Colonie Reference="4">
-            <Nom>Uwu Holidays</Nom>
+        <Colonie Reference="2">
+            <Nom>Cap Monde</Nom>
             <Destination>
                 <Pays>Japon</Pays>
                 <Ville>Tokyo</Ville>
-                <Residence>Tokyo 5 stars</Residence>
-                <DateDebut>10/04/2023</DateDebut>
-                <DateFin>30/04/2023</DateFin>
+                <Residence>Randor Residence Tokyo Suites</Residence>
+                <DateDebut>10/03/2023</DateDebut>
+                <DateFin>10/04/2023</DateFin>
             </Destination>
-            <Prix>631</Prix>
+            <Prix>1631</Prix>
             <Langue>Japonais</Langue>
             <Activites>
                 <Sportive>
-                    <Sport>Foot</Sport>
-                    <Lieu>London Football Club</Lieu>
-                    <Date>21/06/2023</Date>
-                    <Duree>2 heures</Duree>
+                    <Sport>Skateboard</Sport>
+                    <Lieu>Tokyo Skate Park</Lieu>
+                    <Date>21/03/2023</Date>
+                    <Duree>4 heures</Duree>
+                </Sportive>
+                <Sportive>
+                    <Sport>Volley</Sport>
+                    <Lieu>Tokyo Orion Center</Lieu>
+                    <Date>12/03/2023</Date>
+                    <Duree>3 heures</Duree>
                 </Sportive>
             </Activites>
             <Public>
@@ -112,9 +141,9 @@
                     <Intervenants>
                         <Intervenant>
                             <Age>41</Age>
-                            <Nom>DansGarage</Nom>
-                            <Prenom>Yamamoto</Prenom>
-                            <Occupation>Coach De Volley</Occupation>
+                            <Nom>Ishikawa</Nom>
+                            <Prenom>Yūki</Prenom>
+                            <Occupation>Joueur De Volley</Occupation>
                         </Intervenant>
                         <Intervenant>
                             <Age>21</Age>
@@ -127,36 +156,122 @@
                 <Jeunes>
                     <Jeune>
                         <Age>13</Age>
-                        <Nom>Barack</Nom>
-                        <Prenom>Obama</Prenom>
+                        <Nom>Karrakchou</Nom>
+                        <Prenom>Mourad</Prenom>
+                    </Jeune>
+                </Jeunes>
+            </Public>
+        </Colonie>
+        <Colonie Reference="3"> <!-- Une colonie parmi d'autres, avec une reference unique (id) -->
+            <Nom>Supernova Juniors</Nom>
+            <Destination>
+                <Pays>Angleterre</Pays>
+                <Ville>Portsmouth</Ville>
+                <Residence>Portsmouth 5-Stars Hotel</Residence>
+                <DateDebut>24/05/2023</DateDebut>
+                <DateFin>30/07/2023</DateFin>
+            </Destination>
+            <Prix>3514</Prix>
+            <Langue>Anglais</Langue>
+            <Activites>
+                <Culturelle>
+                    <Nom>Le Roi Lion</Nom>
+                    <Lieu>The Lyceum Theatre</Lieu>
+                    <Date>22/06/2023</Date>
+                    <Duree>3 heures</Duree>
+                </Culturelle>
+                <Culturelle>
+                    <Nom>Visite guidée de Londres</Nom>
+                    <Lieu>Londres</Lieu>
+                    <Date>5/07/2023</Date>
+                    <Duree>4 heures</Duree>
+                </Culturelle>
+                <Sportive>
+                    <Sport>Course à pied</Sport>
+                    <Lieu>Central Park</Lieu>
+                    <Date>15/06/2023</Date>
+                    <Duree>1 heure</Duree>
+                </Sportive>
+                <Sportive>
+                    <Sport>Basketball</Sport>
+                    <Lieu>Madison Square Garden</Lieu>
+                    <Date>01/07/2023</Date>
+                    <Duree>2 heures</Duree>
+                </Sportive>
+            </Activites>
+            <Public>
+                <Adultes>
+                    <Animateurs>
+                        <Animateur idAnimateur="3">
+                            <Age>31</Age>
+                            <Nom>Le Bihan</Nom>
+                            <Prenom>Leo</Prenom>
+                        </Animateur>
+                        <Animateur idAnimateur="4">
+                            <Age>23</Age>
+                            <Nom>Gaudet</Nom>
+                            <Prenom>Benoit</Prenom>
+                        </Animateur>
+                    </Animateurs>
+                    <Intervenants>
+                        <Intervenant idIntervenant="2">
+                            <Age>26</Age>
+                            <Nom>Doe</Nom>
+                            <Prenom>Joe</Prenom>
+                            <Occupation>Guide touristique</Occupation>
+                        </Intervenant>
+                        <Intervenant>
+                            <Age>53</Age>
+                            <Nom>White</Nom>
+                            <Prenom>Walter</Prenom>
+                            <Occupation>Coach Sportif</Occupation>
+                        </Intervenant>
+                    </Intervenants>
+                </Adultes>
+                <Jeunes>
+                    <Jeune idJeune="2">
+                        <Age>19</Age>
+                        <Nom>Billequin</Nom>
+                        <Prenom>Thomas</Prenom>
+                    </Jeune>
+                    <Jeune>
+                        <Age>11</Age>
+                        <Nom>Decrypt</Nom>
+                        <Prenom>Hugo</Prenom>
                     </Jeune>
                 </Jeunes>
             </Public>
         </Colonie>
     </Colonies>
     <GroupesScolaires> <!-- Second type de séjour, les groupes scolaires avec une liste de groupes différents -->
-        <Groupe Reference="2"> <!-- Un groupe scolaire parmi d'autres, avec une reference unique (id) -->
-            <Nom>Groupe scolaire 1</Nom>
+        <Groupe Reference="4"> <!-- Un groupe scolaire parmi d'autres, avec une reference unique (id) -->
+            <Nom>Ecole les Sables D'Or</Nom>
             <Destination>
                 <Pays>Angleterre</Pays>
-                <Ville>Londres</Ville>
-                <Residence>Bermonds Locke</Residence>
-                <DateDebut>12/06/2023</DateDebut>
-                <DateFin>25/06/2023</DateFin>
+                <Ville>Birmingham</Ville>
+                <Residence>Crowne Plaza Birmingham Nec</Residence>
+                <DateDebut>14/01/2022</DateDebut>
+                <DateFin>25/02/2022</DateFin>
             </Destination>
-            <Prix>345</Prix>
+            <Prix>1952</Prix>
             <Langue>Anglais</Langue>
             <Activites>
                 <QuizLangue>
-                    <Nom>Questionnaire sur les animaux de la ferme en anglais</Nom>
-                    <Date>21/06/2023</Date>
+                    <Nom>Questionnaire sur les animaux de la ferme</Nom>
+                    <Date>21/01/2022</Date>
                     <Duree>20 minutes</Duree>
                     <Langue>Anglais</Langue>
                     <NombreQuestion>10</NombreQuestion>
                 </QuizLangue>
                 <CoursLangue>
-                    <Date>21/06/2023</Date>
+                    <Date>17/02/2022</Date>
                     <Duree>1 heure</Duree>
+                    <Langue>Anglais</Langue>
+                    <ProfesseurId>1</ProfesseurId>
+                </CoursLangue>
+                <CoursLangue>
+                    <Date>10/02/2022</Date>
+                    <Duree>2 heure</Duree>
                     <Langue>Anglais</Langue>
                     <ProfesseurId>1</ProfesseurId>
                 </CoursLangue>
@@ -166,7 +281,7 @@
                     <Professeurs>
                         <Professeur idProfesseur = "1">
                             <Age>51</Age>
-                            <Nom>Lemor</Nom>
+                            <Nom>Lemora</Nom>
                             <Prenom>Joel</Prenom>
                             <Matiere>Anglais</Matiere>
                         </Professeur>
@@ -174,35 +289,113 @@
                             <Age>24</Age>
                             <Nom>Gonzales</Nom>
                             <Prenom>Miguel</Prenom>
-                            <Matiere>Espagnol</Matiere>
+                            <Matiere>Sport</Matiere>
+                        </Professeur>
+                        <Professeur idProfesseur = "3">
+                            <Age>42</Age>
+                            <Nom>Beton</Nom>
+                            <Prenom>Franck</Prenom>
+                            <Matiere>Technologie</Matiere>
                         </Professeur>
                     </Professeurs>
                     <ParentsAccompagnateur>
                         <Parent idParent = "1">
                             <Age>35</Age>
-                            <Nom>Chan</Nom>
-                            <Prenom>Jacky</Prenom>
-                            <JeuneId>2</JeuneId>
+                            <Nom>Chano</Nom>
+                            <Prenom>Jack</Prenom>
+                            <JeuneId>3</JeuneId>
+                        </Parent>
+                        <Parent idParent = "2">
+                            <Age>31</Age>
+                            <Nom>Nomi</Nom>
+                            <Prenom>Anne</Prenom>
+                            <JeuneId>4</JeuneId>
                         </Parent>
                     </ParentsAccompagnateur>
                 </Adultes>
                 <Jeunes>
-                    <Jeune idJeune="2">
+                    <Jeune idJeune="3">
                         <Age>9</Age>
-                        <Nom>Chan</Nom>
-                        <Prenom>Kilian</Prenom>
+                        <Nom>Chano</Nom>
+                        <Prenom>Quentin</Prenom>
+                    </Jeune>
+                    <Jeune idJeune="4">
+                        <Age>13</Age>
+                        <Nom>Nomi</Nom>
+                        <Prenom>Lisa</Prenom>
+                    </Jeune>
+                </Jeunes>
+            </Public>
+        </Groupe>
+        <Groupe Reference="5"> <!-- Un groupe scolaire parmi d'autres, avec une reference unique (id) -->
+            <Nom>College Frederic Ozanam</Nom>
+            <Destination>
+                <Pays>Etats Unis</Pays>
+                <Ville>New York</Ville>
+                <Residence>AKA Central Park</Residence>
+                <DateDebut>09/08/2023</DateDebut>
+                <DateFin>23/09/2023</DateFin>
+            </Destination>
+            <Prix>3521</Prix>
+            <Langue>Anglais</Langue>
+            <Activites>
+                <QuizLangue>
+                    <Nom>Questionnaire sur les animaux de la ferme</Nom>
+                    <Date>21/09/2023</Date>
+                    <Duree>35 minutes</Duree>
+                    <Langue>Francais</Langue>
+                    <NombreQuestion>15</NombreQuestion>
+                </QuizLangue>
+                <QuizLangue>
+                    <Nom>Questionnaire sur les animaux de l'océan</Nom>
+                    <Date>12/08/2023</Date>
+                    <Duree>1 heure</Duree>
+                    <Langue>Anglais</Langue>
+                    <NombreQuestion>20</NombreQuestion>
+                </QuizLangue>
+                <CoursLangue>
+                    <Date>17/09/2023</Date>
+                    <Duree>1 heure</Duree>
+                    <Langue>Anglais</Langue>
+                    <ProfesseurId>1</ProfesseurId>
+                </CoursLangue>
+            </Activites>
+            <Public>
+                <Adultes>
+                    <Professeurs>
+                        <Professeur idProfesseur = "4">
+                            <Age>51</Age>
+                            <Nom>Box</Nom>
+                            <Prenom>Jean</Prenom>
+                            <Matiere>Anglais</Matiere>
+                        </Professeur>
+                    </Professeurs>
+                    <ParentsAccompagnateur>
+                        <Parent idParent = "3">
+                            <Age>31</Age>
+                            <Nom>Nomi</Nom>
+                            <Prenom>Anne</Prenom>
+                            <JeuneId>5</JeuneId>
+                        </Parent>
+                    </ParentsAccompagnateur>
+                </Adultes>
+                <Jeunes>
+                    <Jeune idJeune="5">
+                        <Age>11</Age>
+                        <Nom>Baillet</Nom>
+                        <Prenom>Ludovic</Prenom>
                     </Jeune>
                 </Jeunes>
             </Public>
         </Groupe>
     </GroupesScolaires>
     <Accueils> <!-- Troisième type de séjour, les familles d'accueil avec une liste de différentes familles -->
-        <Accueil Reference="3"> <!-- une famille faisant partie du système -->
-            <Nom>Famille 1</Nom>
+        <Accueil Reference="6"> <!-- une famille faisant partie du système -->
+            <Nom>Famille Birmin</Nom>
             <Destination>
                 <Pays>Angleterre</Pays>
-                <Ville>Londres</Ville>
-                <Residence>Bermonds Locke</Residence>
+                <Ville>Manchester</Ville>
+                <Residence>City Hotel</Residence>
                 <DateDebut>01/06/2023</DateDebut>
                 <DateFin>01/09/2023</DateFin>
             </Destination>
@@ -226,11 +419,80 @@
                         <Nom>Vioreu</Nom>
                         <Prenom>Yassine</Prenom>
                     </Membre>
+                    <Membre role="Enfant">
+                        <Age>10</Age>
+                        <Nom>Vioreu</Nom>
+                        <Prenom>Moha</Prenom>
+                    </Membre>
                 </Famille>
                 <Jeune> <!-- il y a un jeune par famille d'accueil -->
                     <Age>14</Age>
                     <Nom>Hatier</Nom>
                     <Prenom>Louis</Prenom>
+                </Jeune>
+            </Public>
+        </Accueil>
+        <Accueil Reference="7"> <!-- une famille faisant partie du système -->
+            <Nom>Famille Oukam</Nom>
+            <Destination>
+                <Pays>Canada</Pays>
+                <Ville>Otawa</Ville>
+                <Residence>City Hotel</Residence>
+                <DateDebut>19/10/2023</DateDebut>
+                <DateFin>25/01/2024</DateFin>
+            </Destination>
+            <Prix>2864</Prix>
+            <Langue>Anglais</Langue>
+            <Public>
+                <Famille> <!-- pour les parents, il peut y avoir 1 ou 2 parents, voir 2 parents avec le meme role
+                                    ou voir meme un role de type tuteur, concernant les enfants, la famille peut ou non en avoir -->
+                    <Membre role="Père">
+                        <Age>42</Age>
+                        <Nom>Latapie</Nom>
+                        <Prenom>Florian</Prenom>
+                    </Membre>
+                    <Membre role="Mère">
+                        <Age>39</Age>
+                        <Nom>Bagouy</Nom>
+                        <Prenom>Eleonore</Prenom>
+                    </Membre>
+                </Famille>
+                <Jeune> <!-- il y a un jeune par famille d'accueil -->
+                    <Age>16</Age>
+                    <Nom>Levar</Nom>
+                    <Prenom>Manon</Prenom>
+                </Jeune>
+            </Public>
+        </Accueil>
+        <Accueil Reference="8"> <!-- une famille faisant partie du système -->
+            <Nom>Famille Pibody</Nom>
+            <Destination>
+                <Pays>Chine</Pays>
+                <Ville>Shanghai</Ville>
+                <Residence>Shanghai Luxe Suite</Residence>
+                <DateDebut>19/06/2021</DateDebut>
+                <DateFin>06/10/2021</DateFin>
+            </Destination>
+            <Prix>3755</Prix>
+            <Langue>Chinois</Langue>
+            <Public>
+                <Famille> <!-- pour les parents, il peut y avoir 1 ou 2 parents, voir 2 parents avec le meme role
+                                    ou voir meme un role de type tuteur, concernant les enfants, la famille peut ou non en avoir -->
+                    <Membre role="Tuteur">
+                        <Age>36</Age>
+                        <Nom>Junpai</Nom>
+                        <Prenom>Xiao</Prenom>
+                    </Membre>
+                    <Membre role="Enfant">
+                        <Age>14</Age>
+                        <Nom>Junpai</Nom>
+                        <Prenom>Mehin</Prenom>
+                    </Membre>
+                </Famille>
+                <Jeune> <!-- il y a un jeune par famille d'accueil -->
+                    <Age>15</Age>
+                    <Nom>Henry</Nom>
+                    <Prenom>Emmanuel</Prenom>
                 </Jeune>
             </Public>
         </Accueil>
