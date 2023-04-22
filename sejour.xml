@@ -73,6 +73,11 @@
                         <Nom>Bonnet</Nom>
                         <Prenom>Kilian</Prenom>
                     </Jeune>
+                    <Jeune>
+                        <Age>8</Age>
+                        <Nom>Aulass</Nom>
+                        <Prenom>Jean-Michel</Prenom>
+                    </Jeune>
                 </Jeunes>
             </Public>
         </Colonie>
