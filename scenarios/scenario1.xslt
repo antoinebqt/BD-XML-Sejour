@@ -3,10 +3,13 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title>Colonies et intervenants</title>
+                <title>Activités et intervenants des colonies</title>
                 <link rel="stylesheet" href="style.css"/>
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend"/>
             </head>
             <body>
+                <h1 class="title">Activités et intervenants des colonies</h1>
+                <hr/>
                 <xsl:apply-templates select="//Colonie"/>
             </body>
         </html>
@@ -19,7 +22,7 @@
             <!-- Affichage des lieux sportifs -->
             <xsl:variable name="lieuxSportifs" select="Activites/Sportive/Lieu"/>
             <xsl:if test="$lieuxSportifs">
-                <p>Les localisations sportives sont :</p>
+                <p>Localisations des activités sportives :</p>
                 <ul>
                     <xsl:for-each select="$lieuxSportifs">
                         <li><xsl:value-of select="."/></li>
@@ -30,7 +33,7 @@
             <!-- Affichage des lieux culturels -->
             <xsl:variable name="lieuxCulturels" select="Activites/Culturelle/Lieu"/>
             <xsl:if test="$lieuxCulturels">
-                <p>Les localisations culturelles sont :</p>
+                <p>Localisations des activités culturelles :</p>
                 <ul>
                     <xsl:for-each select="$lieuxCulturels">
                         <li><xsl:value-of select="."/></li>
@@ -54,6 +57,7 @@
                     </tr>
                 </xsl:for-each>
             </table>
+            <hr/>
         </xsl:if>
     </xsl:template>
 </xsl:stylesheet>

@@ -2,7 +2,7 @@ import json
 import xml.etree.ElementTree as ET
 
 # Ouverture et lecture du fichier XML
-tree = ET.parse("sejour.xml")
+tree = ET.parse("../sejour.xml")
 root = tree.getroot()
 
 # Initialisation du dictionnaire de sortie
@@ -22,6 +22,6 @@ for element in root.iter():
         sortie[nom_groupe] = jeunes
 
 # Écriture du résultat dans un fichier JSON
-with open("outputs/sortie.json", "w") as fichier_sortie:
-    json.dump(sortie, fichier_sortie,indent=2)
+with open("../outputs/bonus.json", "w") as fichier_sortie:
+    json.dump(sortie, fichier_sortie, indent=2)
 

@@ -16,8 +16,11 @@
             <head>
                 <title>Statistiques sur les séjours</title>
                 <link rel="stylesheet" href="style.css"/>
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend"/>
             </head>
             <body>
+                <h1 class="title">Statistiques sur les séjours</h1>
+                <hr/>
                 <!-- STATISTIQUES SUR TOUS TYPES DE SEJOUR -->
                 <h1>Statistiques sur tous les types de séjour</h1>
                 <h2>Stats sur le nombre de séjours</h2>
@@ -118,7 +121,7 @@
                 <h2>Stats sur les langues des destinations</h2>
                 <table>
                     <tr>
-                        <th>Langue</th>
+                        <th>Langues</th>
                         <th>Nombre d'occurrences</th>
                     </tr>
                     <!-- Pour chaque Langue, on récupère la clé et on compte le nombre d'occurrences -->
@@ -134,9 +137,9 @@
                         </tr>
                     </xsl:for-each>
                 </table>
+                <hr/>
 
                 <!-- STATISTIQUES SUR LES COLONIES DE VACANCES -->
-                <hr/>
                 <h1>Statistiques sur toutes les colonies de vacances</h1>
                 <h2>Stats sur le nombre de séjours</h2>
                 <xsl:variable name="totalSejourColonie" select="count(Sejours/Colonies/Colonie)"/>
@@ -228,7 +231,7 @@
                 <h2>Stats sur les langues des destinations</h2>
                 <table>
                     <tr>
-                        <th>Langue</th>
+                        <th>Langues</th>
                         <th>Nombre d'occurrences</th>
                     </tr>
                     <!-- Pour chaque Langue, on récupère la clé et on compte le nombre d'occurrences -->
@@ -252,9 +255,9 @@
                 <h2>Stats sur le public</h2>
                 <p>Nombre d'animateurs : <xsl:value-of select="count(//Animateur)"/></p>
                 <p>Nombre d'intervenants : <xsl:value-of select="count(//Intervenant)"/></p>
+                <hr/>
 
                 <!-- STATISTIQUES SUR LES GROUPES SCOLAIRES -->
-                <hr/>
                 <h1>Statistiques sur tous les groupes scolaires</h1>
                 <h2>Stats sur le nombre de séjours</h2>
                 <xsl:variable name="totalSejourGroupe" select="count(Sejours/GroupesScolaires/Groupe)"/>
@@ -346,7 +349,7 @@
                 <h2>Stats sur les langues des destinations</h2>
                 <table>
                     <tr>
-                        <th>Langue</th>
+                        <th>Langues</th>
                         <th>Nombre d'occurrences</th>
                     </tr>
                     <!-- Pour chaque Langue, on récupère la clé et on compte le nombre d'occurrences -->
@@ -366,9 +369,9 @@
                 <h2>Stats sur le public</h2>
                 <p>Nombre de professeurs : <xsl:value-of select="count(//Professeur)"/></p>
                 <p>Nombre de parents accompagnateurs : <xsl:value-of select="count(//Parent)"/></p>
+                <hr/>
 
                 <!-- STATISTIQUES SUR LES IMMERSIONS EN FAMILLE D'ACCUEIL -->
-                <hr/>
                 <h1>Statistiques sur toutes les immersions en famille d'accueil</h1>
                 <h2>Stats sur le nombre de séjours</h2>
                 <xsl:variable name="totalSejourAccueil" select="count(Sejours/Accueils/Accueil)"/>
@@ -460,7 +463,7 @@
                 <h2>Stats sur les langues des destinations</h2>
                 <table>
                     <tr>
-                        <th>Langue</th>
+                        <th>Langues</th>
                         <th>Nombre d'occurrences</th>
                     </tr>
                     <!-- Pour chaque Langue, on récupère la clé et on compte le nombre d'occurrences -->
@@ -476,6 +479,7 @@
                         </tr>
                     </xsl:for-each>
                 </table>
+                <hr/>
             </body>
         </html>
     </xsl:template>

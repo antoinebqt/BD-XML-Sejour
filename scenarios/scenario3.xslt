@@ -6,8 +6,11 @@
             <head>
                 <title>Liste des séjours en Angleterre</title>
                 <link rel="stylesheet" href="style.css"/>
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend"/>
             </head>
             <body>
+                <h1 class="title">Liste des séjours en Angleterre</h1>
+                <hr/>
                 <h1>Liste des colonies de vacances en Angleterre</h1>
                 <xsl:apply-templates select="Sejours/Colonies/Colonie[Destination/Pays='Angleterre']"/>
 
@@ -30,57 +33,57 @@
             </thead>
             <tbody>
                 <tr>
-                    <th>Référence</th>
+                    <td>Référence</td>
                     <td>
                         <xsl:value-of select="@Reference"/>
                     </td>
                 </tr>
                 <tr>
-                    <th>Pays</th>
+                    <td>Pays</td>
                     <td><xsl:value-of select="Destination/Pays"/></td>
                 </tr>
                 <tr>
-                    <th>Ville</th>
+                    <td>Ville</td>
                     <td><xsl:value-of select="Destination/Ville"/></td>
                 </tr>
                 <tr>
-                    <th>Résidence</th>
+                    <td>Résidence</td>
                     <td><xsl:value-of select="Destination/Residence"/></td>
                 </tr>
                 <tr>
-                    <th>Date de début</th>
+                    <td>Date de début</td>
                     <td><xsl:value-of select="Destination/DateDebut"/></td>
                 </tr>
                 <tr>
-                    <th>Date de fin</th>
+                    <td>Date de fin</td>
                     <td><xsl:value-of select="Destination/DateFin"/></td>
                 </tr>
                 <tr>
-                    <th>Prix</th>
+                    <td>Prix</td>
                     <td><xsl:value-of select="Prix"/> €</td>
                 </tr>
                 <tr>
-                    <th>Langue</th>
+                    <td>Langue</td>
                     <td><xsl:value-of select="Langue"/></td>
                 </tr>
                 <xsl:if test="count(Activites/Sportive) &gt; 0">
                     <tr>
-                        <th>Activité(s) sportive(s)</th>
+                        <td>Activité(s) sportive(s)</td>
                         <td><xsl:for-each select="Activites/Sportive">
                             <table>
                                 <tr>
                                     <th colspan="2"><xsl:value-of select="Sport"/></th>
                                 </tr>
                                 <tr>
-                                    <th>Lieu</th>
+                                    <td>Lieu</td>
                                     <td><xsl:value-of select="Lieu"/></td>
                                 </tr>
                                 <tr>
-                                    <th>Date</th>
+                                    <td>Date</td>
                                     <td><xsl:value-of select="Date"/></td>
                                 </tr>
                                 <tr>
-                                    <th>Durée</th>
+                                    <td>Durée</td>
                                     <td><xsl:value-of select="Duree"/></td>
                                 </tr>
                             </table>
@@ -89,22 +92,22 @@
                 </xsl:if>
                 <xsl:if test="count(Activites/Culturelle) &gt; 0">
                     <tr>
-                        <th>Activité(s) culturelle(s)</th>
+                        <td>Activité(s) culturelle(s)</td>
                         <td><xsl:for-each select="Activites/Culturelle">
                             <table>
                                 <tr>
                                     <th colspan="2"><xsl:value-of select="Nom"/></th>
                                 </tr>
                                 <tr>
-                                    <th>Lieu</th>
+                                    <td>Lieu</td>
                                     <td><xsl:value-of select="Lieu"/></td>
                                 </tr>
                                 <tr>
-                                    <th>Date</th>
+                                    <td>Date</td>
                                     <td><xsl:value-of select="Date"/></td>
                                 </tr>
                                 <tr>
-                                    <th>Durée</th>
+                                    <td>Durée</td>
                                     <td><xsl:value-of select="Duree"/></td>
                                 </tr>
                             </table>
@@ -112,7 +115,7 @@
                     </tr>
                 </xsl:if>
                 <tr>
-                    <th>Animateur(s)</th>
+                    <td>Animateur(s)</td>
                     <td>
                         <xsl:for-each select="Public/Adultes/Animateurs/Animateur">
                             <p>
@@ -123,7 +126,7 @@
                 </tr>
                 <xsl:if test="count(Public/Adultes/Intervenants/Intervenant) &gt; 0">
                     <tr>
-                        <th>Intervenants(s)</th>
+                        <td>Intervenants(s)</td>
                         <td><xsl:for-each select="Public/Adultes/Intervenants/Intervenant">
                             <p>
                                 <xsl:value-of select="Prenom"/><xsl:text> </xsl:text><xsl:value-of select="Nom"/>, <xsl:value-of select="Age"/> ans (<xsl:value-of select="Occupation"/>)
@@ -132,7 +135,7 @@
                     </tr>
                 </xsl:if>
                 <tr>
-                    <th>Jeune(s)</th>
+                    <td>Jeune(s)</td>
                     <td>
                         <xsl:for-each select="Public/Jeunes/Jeune">
                             <p>
@@ -143,6 +146,7 @@
                 </tr>
             </tbody>
         </table>
+        <hr/>
     </xsl:template>
 
     <!-- Template pour chaque groupe scolaire -->
@@ -155,61 +159,61 @@
             </thead>
             <tbody>
                 <tr>
-                    <th>Référence</th>
+                    <td>Référence</td>
                     <td>
                         <xsl:value-of select="@Reference"/>
                     </td>
                 </tr>
                 <tr>
-                    <th>Pays</th>
+                    <td>Pays</td>
                     <td><xsl:value-of select="Destination/Pays"/></td>
                 </tr>
                 <tr>
-                    <th>Ville</th>
+                    <td>Ville</td>
                     <td><xsl:value-of select="Destination/Ville"/></td>
                 </tr>
                 <tr>
-                    <th>Résidence</th>
+                    <td>Résidence</td>
                     <td><xsl:value-of select="Destination/Residence"/></td>
                 </tr>
                 <tr>
-                    <th>Date de début</th>
+                    <td>Date de début</td>
                     <td><xsl:value-of select="Destination/DateDebut"/></td>
                 </tr>
                 <tr>
-                    <th>Date de fin</th>
+                    <td>Date de fin</td>
                     <td><xsl:value-of select="Destination/DateFin"/></td>
                 </tr>
                 <tr>
-                    <th>Prix</th>
+                    <td>Prix</td>
                     <td><xsl:value-of select="Prix"/> €</td>
                 </tr>
                 <tr>
-                    <th>Langue</th>
+                    <td>Langue</td>
                     <td><xsl:value-of select="Langue"/></td>
                 </tr>
                 <xsl:if test="count(Activites/QuizLangue) &gt; 0">
                     <tr>
-                        <th>Quiz de langue</th>
+                        <td>Quiz de langue</td>
                         <td><xsl:for-each select="Activites/QuizLangue">
                             <table>
                                 <tr>
                                     <th colspan="2"><xsl:value-of select="Nom"/></th>
                                 </tr>
                                 <tr>
-                                    <th>Langue</th>
+                                    <td>Langue</td>
                                     <td><xsl:value-of select="Langue"/></td>
                                 </tr>
                                 <tr>
-                                    <th>Date</th>
+                                    <td>Date</td>
                                     <td><xsl:value-of select="Date"/></td>
                                 </tr>
                                 <tr>
-                                    <th>Durée</th>
+                                    <td>Durée</td>
                                     <td><xsl:value-of select="Duree"/></td>
                                 </tr>
                                 <tr>
-                                    <th>Nombre de questions</th>
+                                    <td>Nombre de questions</td>
                                     <td><xsl:value-of select="NombreQuestion"/></td>
                                 </tr>
                             </table>
@@ -218,22 +222,22 @@
                 </xsl:if>
                 <xsl:if test="count(Activites/CoursLangue) &gt; 0">
                     <tr>
-                        <th>Cour(s) de langue</th>
+                        <td>Cour(s) de langue</td>
                         <td><xsl:for-each select="Activites/CoursLangue">
                             <table>
                                 <tr>
                                     <th colspan="2"><xsl:value-of select="Langue"/></th>
                                 </tr>
                                 <tr>
-                                    <th>Date</th>
+                                    <td>Date</td>
                                     <td><xsl:value-of select="Date"/></td>
                                 </tr>
                                 <tr>
-                                    <th>Durée</th>
+                                    <td>Durée</td>
                                     <td><xsl:value-of select="Duree"/></td>
                                 </tr>
                                 <tr>
-                                    <th>Professeur</th>
+                                    <td>Professeur</td>
                                     <td><xsl:value-of select="//Professeur[@idProfesseur=current()/ProfesseurId]/Prenom"/><xsl:text> </xsl:text><xsl:value-of select="//Professeur[@idProfesseur=current()/ProfesseurId]/Nom"/>, <xsl:value-of select="//Professeur[@idProfesseur=current()/ProfesseurId]/Age"/> ans</td>
                                 </tr>
                             </table>
@@ -241,7 +245,7 @@
                     </tr>
                 </xsl:if>
                 <tr>
-                    <th>Professeur(s)</th>
+                    <td>Professeur(s)</td>
                     <td>
                         <xsl:for-each select="Public/Adultes/Professeurs/Professeur">
                             <p>
@@ -252,7 +256,7 @@
                 </tr>
                 <xsl:if test="count(Public/Adultes/ParentsAccompagnateur/Parent) &gt; 0">
                     <tr>
-                        <th>Parent(s) accompagnateur(s)</th>
+                        <td>Parent(s) accompagnateur(s)</td>
                         <td><xsl:for-each select="Public/Adultes/ParentsAccompagnateur/Parent">
                             <p>
                                 <xsl:value-of select="Prenom"/><xsl:text> </xsl:text><xsl:value-of select="Nom"/>, <xsl:value-of select="Age"/> ans (Parent de <xsl:value-of select="//Jeune[@idJeune=current()/JeuneId]/Prenom"/><xsl:text> </xsl:text><xsl:value-of select="//Jeune[@idJeune=current()/JeuneId]/Nom"/>)
@@ -261,7 +265,7 @@
                     </tr>
                 </xsl:if>
                 <tr>
-                    <th>Jeune(s)</th>
+                    <td>Jeune(s)</td>
                     <td>
                         <xsl:for-each select="Public/Jeunes/Jeune">
                             <p>
@@ -272,6 +276,7 @@
                 </tr>
             </tbody>
         </table>
+        <hr/>
     </xsl:template>
 
     <!-- Template pour chaque immersion dans une famille -->
@@ -284,41 +289,41 @@
             </thead>
             <tbody>
                 <tr>
-                    <th>Référence</th>
+                    <td>Référence</td>
                     <td>
                         <xsl:value-of select="@Reference"/>
                     </td>
                 </tr>
                 <tr>
-                    <th>Pays</th>
+                    <td>Pays</td>
                     <td><xsl:value-of select="Destination/Pays"/></td>
                 </tr>
                 <tr>
-                    <th>Ville</th>
+                    <td>Ville</td>
                     <td><xsl:value-of select="Destination/Ville"/></td>
                 </tr>
                 <tr>
-                    <th>Résidence</th>
+                    <td>Résidence</td>
                     <td><xsl:value-of select="Destination/Residence"/></td>
                 </tr>
                 <tr>
-                    <th>Date de début</th>
+                    <td>Date de début</td>
                     <td><xsl:value-of select="Destination/DateDebut"/></td>
                 </tr>
                 <tr>
-                    <th>Date de fin</th>
+                    <td>Date de fin</td>
                     <td><xsl:value-of select="Destination/DateFin"/></td>
                 </tr>
                 <tr>
-                    <th>Prix</th>
+                    <td>Prix</td>
                     <td><xsl:value-of select="Prix"/> €</td>
                 </tr>
                 <tr>
-                    <th>Langue</th>
+                    <td>Langue</td>
                     <td><xsl:value-of select="Langue"/></td>
                 </tr>
                 <tr>
-                    <th>Famille</th>
+                    <td>Famille</td>
                     <td>
                         <xsl:for-each select="Public/Famille/Membre">
                             <p>
@@ -328,10 +333,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>Jeune accueilli</th>
+                    <td>Jeune accueilli</td>
                     <td><xsl:value-of select="Public/Jeune/Prenom"/><xsl:text> </xsl:text><xsl:value-of select="Public/Jeune/Nom"/>, <xsl:value-of select="Public/Jeune/Age"/> ans</td>
                 </tr>
             </tbody>
         </table>
+        <hr/>
     </xsl:template>
 </xsl:stylesheet>

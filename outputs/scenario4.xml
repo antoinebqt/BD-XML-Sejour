@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><Utilisateurs>
     <Utilisateur>
+        <NOM>Aulass</NOM>
+        <PRENOM>Jean-Michel</PRENOM>
+        <AGE>8</AGE>
+    </Utilisateur>
+    <Utilisateur>
         <NOM>Barack</NOM>
         <PRENOM>Obama</PRENOM>
         <AGE>13</AGE>
@@ -21,13 +26,13 @@
     </Utilisateur>
     <Utilisateur>
         <NOM>Chan</NOM>
-        <PRENOM>Kilian</PRENOM>
-        <AGE>9</AGE>
-    </Utilisateur>
-    <Utilisateur>
-        <NOM>Chan </NOM>
         <PRENOM>Jacky</PRENOM>
         <AGE>35</AGE>
+    </Utilisateur>
+    <Utilisateur>
+        <NOM>Chan</NOM>
+        <PRENOM>Kilian</PRENOM>
+        <AGE>9</AGE>
     </Utilisateur>
     <Utilisateur>
         <NOM>DansGarage</NOM>
